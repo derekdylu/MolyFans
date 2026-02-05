@@ -1,8 +1,8 @@
 # OpenClaw: frontend 在 frontend/ 子目錄
+# 重要：Netlify 後台 Build settings 的「Publish directory」必須留空，不能填 frontend
 [build]
   base = "frontend"
   command = "npm run build"
-  # 勿在 Netlify 後台把 Publish directory 設成 "frontend"，否則會只部署原始碼而 404
 
 # 使用官方 Next.js plugin，才會用 OpenNext 產出正確的 SSR + 靜態資源
 [[plugins]]
