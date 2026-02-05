@@ -30,6 +30,15 @@ app.use(
 app.use(express.json({ limit: "1mb" }));
 app.use(morgan(env.NODE_ENV === "production" ? "combined" : "dev"));
 
+app.get("/", (_req, res) => {
+  res.json({
+    name: "MolyFans API",
+    version: "0.1.0",
+    health: "/health",
+    endpoints: ["/v1/auth", "/v1/providers", "/v1/rentals", "/v1/subscriptions", "/v1/me", "/v1/verify-access"],
+  });
+});
+
 app.get("/health", (_req, res) => {
   res.json({ ok: true });
 });
