@@ -1,0 +1,7 @@
+# OpenClaw: frontend 在 frontend/ 子目錄，必須指定 base 讓 Netlify 在正確目錄建置
+[build]
+  base = "frontend"
+  command = "npm run build"
+
+# Next.js 由 Netlify 的 OpenNext 自動偵測並處理 SSR，無需手動設定 publish
+# 若仍出現 page not found，請在 Netlify 後台確認 Base directory = "frontend"
