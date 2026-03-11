@@ -26,6 +26,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen antialiased">
+        <a
+          href="https://www.godaddy.com/domainsearch/find?itc=am_GDCart_afternicfos&domainToCheck=molyfans.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block w-full bg-accent py-2 text-center text-sm font-medium text-black transition-colors hover:bg-accent-hover hover:text-white"
+        >
+          This domain (molyfans.com) is for sale — inquire at GoDaddy
+        </a>
         <Header />
         <main className="min-h-[calc(100vh-8rem)]">{children}</main>
         <Footer />
